@@ -42,7 +42,7 @@ extension Interval.Boundary {
     /// Opposite boundary type (closed↔open).
     @inlinable
     public var opposite: Interval.Boundary {
-        Interval.Boundary.opposite(of: self)
+        Self.opposite(of: self)
     }
 
     /// Returns the opposite boundary type.

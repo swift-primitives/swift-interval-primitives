@@ -41,7 +41,7 @@ extension Interval.Endpoint {
     /// Opposite endpoint (start↔end).
     @inlinable
     public var opposite: Interval.Endpoint {
-        Interval.Endpoint.opposite(of: self)
+        Self.opposite(of: self)
     }
 
     /// Returns the opposite endpoint.

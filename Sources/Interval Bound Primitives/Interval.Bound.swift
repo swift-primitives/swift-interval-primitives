@@ -40,7 +40,7 @@ extension Interval.Bound {
     /// Opposite bound (lower↔upper).
     @inlinable
     public var opposite: Interval.Bound {
-        Interval.Bound.opposite(of: self)
+        Self.opposite(of: self)
     }
 
     /// Returns the opposite bound.
