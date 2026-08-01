@@ -9,6 +9,12 @@ import Testing
 
 @Suite
 struct `Interval Bound` {
+    @Suite struct Unit {}
+    @Suite struct `Edge Case` {}
+    @Suite struct Integration {}
+}
+
+extension `Interval Bound`.Unit {
     @Test
     func `opposite swaps lower and upper`() {
         #expect(Interval.Bound.lower.opposite == .upper)
@@ -34,6 +40,12 @@ struct `Interval Bound` {
 
 @Suite
 struct `Interval Boundary` {
+    @Suite struct Unit {}
+    @Suite struct `Edge Case` {}
+    @Suite struct Integration {}
+}
+
+extension `Interval Boundary`.Unit {
     @Test
     func `opposite swaps closed and open`() {
         #expect(Interval.Boundary.closed.opposite == .open)
@@ -52,6 +64,12 @@ struct `Interval Boundary` {
 
 @Suite
 struct `Interval Endpoint` {
+    @Suite struct Unit {}
+    @Suite struct `Edge Case` {}
+    @Suite struct Integration {}
+}
+
+extension `Interval Endpoint`.Unit {
     @Test
     func `opposite swaps start and end`() {
         #expect(Interval.Endpoint.start.opposite == .end)
