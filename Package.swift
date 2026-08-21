@@ -12,13 +12,12 @@ let package = Package(
         .visionOS(.v27),
     ],
     products: [
-        // MARK: - Namespace
+
         .library(
             name: "Interval Primitive",
             targets: ["Interval Primitive"]
         ),
 
-        // MARK: - Sub-namespace targets
         .library(
             name: "Interval Bound Primitives",
             targets: ["Interval Bound Primitives"]
@@ -32,13 +31,11 @@ let package = Package(
             targets: ["Interval Endpoint Primitives"]
         ),
 
-        // MARK: - Umbrella
         .library(
             name: "Interval Primitives",
             targets: ["Interval Primitives"]
         ),
 
-        // MARK: - Test Support
         .library(
             name: "Interval Primitives Test Support",
             targets: ["Interval Primitives Test Support"]
@@ -51,13 +48,12 @@ let package = Package(
         )
     ],
     targets: [
-        // MARK: - Namespace
+
         .target(
             name: "Interval Primitive",
             dependencies: []
         ),
 
-        // MARK: - Sub-namespace targets (per [MOD-031])
         .target(
             name: "Interval Bound Primitives",
             dependencies: [
@@ -80,7 +76,6 @@ let package = Package(
             ]
         ),
 
-        // MARK: - Umbrella
         .target(
             name: "Interval Primitives",
             dependencies: [
@@ -92,7 +87,6 @@ let package = Package(
             ]
         ),
 
-        // MARK: - Test Support
         .target(
             name: "Interval Primitives Test Support",
             dependencies: [
@@ -101,7 +95,6 @@ let package = Package(
             path: "Tests/Support"
         ),
 
-        // MARK: - Tests
         .testTarget(
             name: "Interval Primitives Tests",
             dependencies: [

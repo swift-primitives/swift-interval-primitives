@@ -1,11 +1,7 @@
-// Interval Descriptor Tests.swift
-
 import Interval_Primitives_Test_Support
 import Testing
 
 @testable import Interval_Primitives
-
-// MARK: - Bound
 
 @Suite
 struct `Interval Bound` {
@@ -36,8 +32,6 @@ extension `Interval Bound`.Unit {
     }
 }
 
-// MARK: - Boundary
-
 @Suite
 struct `Interval Boundary` {
     @Suite struct Unit {}
@@ -59,8 +53,6 @@ extension `Interval Boundary`.Unit {
         #expect(Interval.Boundary.open.isExclusive)
     }
 }
-
-// MARK: - Endpoint
 
 @Suite
 struct `Interval Endpoint` {
